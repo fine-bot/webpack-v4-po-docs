@@ -44,6 +44,7 @@ const commonConfig: webpack.Configuration = {
     },
     output: {
         filename: '[name].js',
+        chunkFilename: '[name].chunk.js',
         path: path.resolve(__dirname, '../dist'),
     },
     plugins: [new HtmlWebpackPlugin(), new BundleAnalyzerPlugin()],

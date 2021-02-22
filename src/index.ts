@@ -1,11 +1,13 @@
-import * as _ from 'lodash';
+import './style.css';
+// import * as _ from 'lodash';
 
-function component() {
-    const element = document.createElement('div');
+// function component() {
+//     const element = document.createElement('div');
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+//     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-    return element;
-}
+//     return element;
+// }
 
-document.body.appendChild(component());
+// document.body.appendChild(component());
+document.write('hello webpack!');

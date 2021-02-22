@@ -11,5 +11,11 @@
 
 ## hash & chunkhash & contenthash
 - hash：一次打包产生的 hash 值，20 位十六进制数。
-- chunkhash：chunk内容的 hash 值。
-- contenthash：模块内容的 hash 值。
+
+<div align="center">
+    <img  src="./assets/hash-example.png" alt="构建生成的hash值"/>
+    <p style="text-decoration: underline;color: gray;">构建生成的hash值</p>
+</div>
+
+- chunkhash：chunk内容的 hash 值，chunk 中`任意模块`发生变化都会引发 `chunkhash` 值的变化。
+- contenthash：模块内容的 hash 值，`文件内容`发生变化即引发 `contenthash` 值的变化。
